@@ -23,5 +23,10 @@
     "reactify": "^1.1.1",
     "uglify-js": "^2.6.2",
     "watchify": "^3.7.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
   }
 }
