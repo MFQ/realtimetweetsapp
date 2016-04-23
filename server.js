@@ -19,6 +19,9 @@ app.set("view engine", "handlebars")
 // Disable etag headers on responses
 app.disable('etag');
 
+mongoose.connect('mongodb://localhost/react-tweets');
+
 var server = http.createServer(app).listen(port, function() {
 	console.log("Express server listening on port "+ port)
-})
+});
+
