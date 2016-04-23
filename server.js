@@ -37,4 +37,11 @@ app.get("/page/:page/:skip", routes.page);
 // Set /public as our static content dir 
 app.use("/", express.static(__dirname+"/public/"));
 
+var io = require('socket.io').listen(server);
 
+twit.stream("status/filter", {
+	track: "scotch_io, #scotchio",
+	function(stream){
+		streamHandler(stream,io);
+	}
+});
