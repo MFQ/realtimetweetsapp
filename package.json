@@ -12,6 +12,7 @@
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
     "mongoose": "^4.4.13",
-    "node-jsx": "^0.13.3"
+    "node-jsx": "^0.13.3",
+    "ntwitter": "^0.5.0"
   }
 }
