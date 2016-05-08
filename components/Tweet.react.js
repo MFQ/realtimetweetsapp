@@ -3,11 +3,10 @@
 var React = require('react');
 
 module.exports = Tweet = React.createClass({
-
-	render: function(){
-		var tweet = this.props.tweet;
-		return (
-			<li className={"tweet" + (tweet.active ? ' active' : '')}>
+  render: function(){
+    var tweet = this.props.tweet;
+    return (
+      <li className={"tweet" + (tweet.active ? ' active' : '')}>
         <img src={tweet.avatar} className="avatar"/>
         <blockquote>
           <cite>
@@ -17,7 +16,6 @@ module.exports = Tweet = React.createClass({
           <span className="content">{tweet.body}</span>
         </blockquote>
       </li>
-		)
-	}
-
+    )
+  }
 });
