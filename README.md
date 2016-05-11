@@ -10,4 +10,3 @@
 4. Replace credentials for Twitter API (configured in `config.js`)
 5. Start the app: `node server.js`
 6. View in browser at: `http://localhost:3000`
-7. Tweet away!
